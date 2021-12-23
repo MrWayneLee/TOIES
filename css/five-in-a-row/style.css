@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    width: 500px;
+    z-index: 5;
+}
+
+#title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: default;
+    user-select: none;
+}
+
+.player {
+    user-select: none;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#chessboard {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #fae673;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#chessboard::before {
+    position: absolute;
+    top: 0;
+    left: -12px;
+    display: block;
+    z-index: 0;
+    content: '';
+    width: 500px;
+    height: 500px;
+    background: -webkit-gradient(
+        linear,
+        right top, left top,
+        from(rgba(0,0,0,0.9)),
+        color-stop(4%, transparent)
+    );
+    background-size: 25px 100%;
+}
+
+#chessboard::after {
+    position: absolute;
+    top: -12px;
+    left: 0;
+    display: block;
+    z-index: 0;
+    content: '';
+    width: 500px;
+    height: 500px;
+    background: -webkit-gradient(
+        linear,
+        left bottom, left top,
+        from(rgba(0,0,0,0.9)),
+        color-stop(4%, transparent)
+    );
+    background-size: 100% 25px;
+}
+
+.frame {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    margin-top: 68px;
+    border: 12.5px solid #ffd900;
+    z-index: 7;
+}
+
+.row {
+    width: 100%;
+    height: 5%;
+    z-index: 10;
+    display: flex;
+}
+
+.chessunit {
+    position: relative;
+    width: 5%;
+    height: 5%;
+    background: transparent;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.chessunit:hover {
+    background: rgba(255,255,255,.5);
+}
+
+.chessunit.active .white, .chessunit.active .black {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    z-index: 10;
+    border-radius: 100px;
+    box-shadow: 0 0 4px 0 #ccc;
+}
+
+.chessunit.active:hover {
+    background: rgba(255, 21, 21, 0.5);
+}
+
+.white {
+    background: #fff;
+}
+
+.black {
+    background: #111;
+}
+
+.result {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    margin-top: 68px;
+    z-index: 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.result.show {
+    display: flex;
+}
+
+.result-panel {
+    text-align: center;
+    padding: 15px 40px;
+    background: rgba(255,255,255,.6);
+    border-radius: 10px;
+}
+
+.result-panel p {
+    margin-bottom: 10px;
+}
+
+.restart {
+    padding: 5px 15px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.restart:hover {
+    background: #000;
+    color: #fff;
+}

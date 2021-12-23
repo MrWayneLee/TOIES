@@ -1,0 +1,73 @@
+body {
+    background-color: #fafafa;
+    margin: 5rem;
+    padding: 0;
+}
+
+.letter {
+    background-color: #fffbbc;
+    box-shadow: 0 0 10px #ddd;
+    padding: 3rem;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif, "宋体";
+    text-decoration: underline 3px dashed #222;
+    text-align: center;
+    margin: 2rem;
+    padding: 0;
+}
+
+.content {
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(#818181),
+        color-stop(2%, #fffbbc)
+    );
+    background-size: 100% 32px;
+    margin: 2rem 10rem;
+}
+
+p {
+    font-family: "Times New Roman", STZhongsong, Times, serif;
+    text-align: justify;
+    text-indent: 2.6rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 2rem;
+    padding: 0px 2rem;
+    margin: 0;
+}
+
+.head {
+    text-indent: 0rem;
+}
+
+.end {
+    text-align: right;
+}
+
+@media (max-width: 992px) {
+    body {
+        margin: 5rem 1rem;
+    }
+
+    .letter {
+        padding: 3rem 1rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        margin: 2rem 0;
+    }
+
+    .content {
+        margin: 2rem 0;
+    }
+
+    p {
+        padding: 0;
+    }
+}

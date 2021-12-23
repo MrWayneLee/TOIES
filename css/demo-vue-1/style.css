@@ -1,0 +1,46 @@
+.form {
+    border: 1px solid #efefef;
+    width: 200px;
+    height: 30px;
+    outline-style: none;
+}
+.form:focus {
+    border: 1px solid #000;
+}
+.btn {
+    border: 1px solid #efefef;
+    background: #fff;
+    width: 70px;
+    height: 34px;
+    outline-style: none;
+}
+.btn:focus {
+    border: 1px solid #000;
+}
+.btn:active {
+    background: #000;
+    color: #fff;
+}
+.list {
+    border: 1px solid #efefef;
+    border-bottom: none;
+    width: 204px;
+    height: 30px;
+    transition: 0.1s ease;
+}
+.list:hover {
+    background: #afafaf;
+    color: #fff;
+    transition: 0.1s ease;
+}
+.list:active {
+    background: #000;
+    color: #fff;
+    transition: 0.1s ease;
+}
+.list:last-of-type {
+    border-bottom: 1px solid #efefef;;
+}
+.list:first-of-type {
+    margin-top: 5px;
+}

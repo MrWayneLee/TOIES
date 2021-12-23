@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./js/vue.js"></script>
+        <link rel="stylesheet" href="./css/demo-vue-1/style.css" />
+        <title>demo</title>
+    </head>
+
+    <body>
+        <div id="hello-vue">
+            <!-- v-model双向绑定监听，value为内容 -->
+            <input type="text" class="form" v-model="value" />
+            <!-- 绑定了click点击事件，触发add方法 -->
+            <!-- 简写：v-on:click => @click -->
+            <button class="btn" @click="add">SUBMIT</button>
+            <!-- v-for循环语句，变量item为从list的列表中每一次遍历的内容 -->
+            <!-- 简写：v-bind:item => :item -->
+            <!-- 简写：v-bind:index => :index -->
+            <!-- 与子组件绑定事件delete -->
+            <wayne
+                :item="item"
+                :index="index"
+                v-for="(item, index) in list"
+                @delete="removeItem"
+            ></wayne>
+            <!-- <div class="list" v-for="item in list">
+            {{ item }}
+        </div> -->
+        </div>
+        <script>
+            //自定义组件，名称为wayne[<wayne></wayne>]
+            Vue.component("wayne", {
+                //父组件通过prop将数据传递给子组件
+                props: ["item", "index"],
+                //子组件的模板，其中绑定了click点击事件，触发子组件的方法remove
+                template: "<div class='list' @click='remove'>{{item}}</div>",
+                //子组件的方法，作用域为子组件
+                methods: {
+                    //由@click='remove'触发
+                    remove: function () {
+                        //$emit方法触发父组件的事件delete，并将值传递给父组件
+                        this.$emit("delete", this.index);
+                    },
+                },
+            });
+
+            const HelloVueApp = new Vue({
+                el: "#hello-vue",
+                data: {
+                    //list的列表，配合v-for语句对元素进行渲染
+                    list: [],
+                    //v-model双向绑定监听，value为内容
+                    value: "",
+                    name: "Wayne",
+                    first: "Lee",
+                },
+                watch: {},
+                //实例的方法
+                methods: {
+                    //由@click='add'触发，当元素被按下时则执行add中的逻辑
+                    add: function () {
+                        //判断值是否为空
+                        if (this.value.length === 0) {
+                            //值为空则不做任何操作
+                            return;
+                        } else {
+                            //向data中的list变量中push(添加)value的值，值与input中的内容同步，同时v-for语句循环遍历list中的内容，实现提交并添加的功能
+                            this.list.push(this.value);
+                        }
+                        //由于与input中的内容同步，在此处清空value的内容，实现点按提交内容并显示的TodoList功能
+                        this.value = "";
+                    },
+                    //由@delete='removeItem'触发，接受到传递的值以形参的形式使用
+                    removeItem: function (index) {
+                        //对data中的list变量splice(删除)索引为index之后一个长度的值，实现点击删除事件
+                        this.list.splice(index, 1);
+                    },
+                },
+                //计算的方法
+                computed: {},
+            });
+        </script>
+    </body>
+</html>

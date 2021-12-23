@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/five-in-a-row/style.css">
+    <title>Gomoku</title>
+</head>
+<body>
+    <div id="app">
+        <div class="title">
+            <p title="CLICK TO RESTART" id="title" @click="restart()">Five in a row - Gomoku</p>
+            <p id="info">
+                <span>Steps:<i>{{steps + 1}}</i></span>
+                <span @click="undo()" style="z-index: 5;"><i class="player" title="CLICK TO REGRET">{{player[steps % 2]}}</i>:Player</span>
+            </p>
+        </div>
+        <div id="chessboard">
+            <div ref="row" class="row" v-for="(item, indexX) in unit">
+                <div 
+                    @click="setPieces(indexX, indexY)"
+                    v-for="(item, indexY) in unit" 
+                    style="height: 100%;"
+                    class="chessunit" 
+                    ref="col"
+                    >
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="frame" ref="frame"></div>
+        <div class="result" ref="result">
+            <div class="result-panel">
+                <p><span class="winner"></span> WIN!</p>
+                <div class="restart">Restart</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/five-in-a-row/five-in-a-row[vue].js"></script>
+</body>
+</html>

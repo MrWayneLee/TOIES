@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+	<style>
+		body, table {
+			margin: 0;
+			padding: 0;
+			border-collapse: collapse;
+			text-align: center;
+		}
+		th, td {
+			padding: 5px 10px;
+		}
+	</style>
+</head>
+<body>
+	<table id="list" border="1">
+		<tr><th>keys</th><th>values</th></tr>
+	</table>
+	<script>
+		var paramsObj = {}
+		// 获取url之后的字符串
+		var paramsStr = location.search
+		// 判断字符串是否为空
+		if(paramsStr.length) {
+			// 删除?并将剩余字符串以&分割并合并成一个数组
+			var paramsArray = paramsStr.substr(1).split("&")
+			// 对数组遍历
+			for(var i = 0; i < paramsArray.length; i ++) {
+				// 检查数组中是否有=符号
+				if(paramsArray[i].indexOf("=") != "-1") {
+					// 对每一个对象进行字段和值转换成对象
+					paramsObj[paramsArray[i].split("=")[0]] = paramsArray[i].split("=")[1];   
+				}
+			}
+			// 打印对象
+			console.log(paramsObj)
+		}
+		var el_list = document.getElementById("list")
+		for(var j = 0; j < Object.keys(paramsObj).length; j ++){
+			var tr = document.createElement("tr")
+			var td = document.createElement("td")
+			var td2 = document.createElement("td")
+			td.appendChild(document.createTextNode(Object.keys(paramsObj)[j]))
+			td2.appendChild(document.createTextNode(Object.values(paramsObj)[j]))
+			tr.appendChild(td)
+			tr.appendChild(td2)
+			el_list.appendChild(tr)
+		}
+	</script>
+</body>
+</html>
