@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.bg-pink {
+    background: pink;
+}
+
+.bg-black {
+    background: black;
+}
+
+.bg-orange {
+    background: orange;
+}
+
+.full-carousel {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+#carousel-main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-main-list {
+    transition: ease 0.5s;
+    width: 100%;
+    height: max-content;
+}
+
+.btn-up, 
+.btn-down {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    padding: 5px 0;
+}
+
+.btn-up {
+    top: 0;
+}
+
+.btn-down {
+    bottom: 0;
+}
+
+.carousel-main-item {
+    width: 100%;
+}
+
+.carousel-sub {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-left, 
+.btn-right {
+    top: 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    cursor: pointer;
+    user-select: none;
+    padding: 0 5px;
+}
+
+.btn-left {
+    left: 0;
+}
+
+.btn-right {
+    right: 0;
+}
+
+.carousel-sub-list {
+    transition: ease 0.5s;
+    transform: translate(0px);
+    width: max-content;
+    height: 100%;
+    font-size: 0;
+}
+
+.carousel-sub-item {
+    font-size: 1rem;
+    display: inline-block;
+    height: 100%;
+}
