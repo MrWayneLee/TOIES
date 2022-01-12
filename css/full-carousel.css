@@ -36,6 +36,26 @@ a, a:hover {
     background: orange;
 }
 
+.bg-yellowgreen {
+    background: yellowgreen;
+}
+
+.bg-aquamarine {
+    background: aquamarine;
+}
+
+.bg-indigo {
+    background: indigo;
+}
+
+.bg-maroon {
+    background: maroon;
+}
+
+.bg-lightskyblue {
+    background: lightskyblue;
+}
+
 .full-carousel {
     width: 100%;
     height: 100%;
