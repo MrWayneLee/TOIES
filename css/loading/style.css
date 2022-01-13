@@ -1,0 +1,374 @@
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    font-size: 0;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background: #000;
+    color: #fff;
+}
+
+label {
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 10px 20px;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    user-select: none;
+}
+
+svg {
+    background: #f5f5f5;
+    display: none;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+input:nth-of-type(1):checked ~ svg:nth-of-type(1) {
+    display: block;
+}
+
+input:nth-of-type(2):checked ~ svg:nth-of-type(2) {
+    display: block;
+}
+
+input:nth-of-type(1):checked ~ svg:nth-of-type(1) .inner {
+    animation: fill 1.4s forwards ease;
+    animation-delay: 0.6s;
+}
+
+input:nth-of-type(1):checked ~ svg:nth-of-type(1) .middle {
+    animation: fill 1.7s forwards ease;
+    animation-delay: 0.3s;
+}
+
+input:nth-of-type(1):checked ~ svg:nth-of-type(1) .outer {
+    animation: fill 2s forwards ease;
+}
+
+input:nth-of-type(2):checked ~ svg:nth-of-type(2) .inner {
+    animation: reverse-fill-i 1.4s forwards ease;
+    animation-delay: 0.6s;
+}
+
+input:nth-of-type(2):checked ~ svg:nth-of-type(2) .middle {
+    animation: reverse-fill-m 1.7s forwards ease;
+    animation-delay: 0.3s;
+}
+
+input:nth-of-type(2):checked ~ svg:nth-of-type(2) .outer {
+    animation: reverse-fill-o 2s forwards ease;
+}
+
+.outer {
+    cx: 50%;
+    cy: 50%;
+    r: calc(50% - 40px);
+    transform-origin: center;
+    transform: rotate(270deg);
+    stroke: #1e88e5;
+    stroke-width: 30px;
+    stroke-linecap: round;
+    stroke-dasharray: 265%;
+    stroke-dashoffset: 265%;
+    fill: none;
+}
+
+.middle {
+    cx: 50%;
+    cy: 50%;
+    r: calc(50% - 80px);
+    transform-origin: center;
+    transform: rotate(270deg);
+    stroke: #1e88e5;
+    stroke-width: 30px;
+    stroke-linecap: round;
+    stroke-dasharray: 214%;
+    stroke-dashoffset: 214%;
+    fill: none;
+}
+
+.inner {
+    cx: 50%;
+    cy: 50%;
+    r: calc(50% - 120px);
+    transform-origin: center;
+    transform: rotate(270deg);
+    stroke: #1e88e5;
+    stroke-width: 30px;
+    stroke-linecap: round;
+    stroke-dasharray: 164%;
+    stroke-dashoffset: 164%;
+    fill: none;
+}
+
+@keyframes fill {
+    80% {
+        stroke-dashoffset: 0%;
+        stroke: #1e88e5;
+    }
+    100% {
+        stroke-dashoffset: 0%;
+        stroke: #43a047;
+    }
+}
+
+@keyframes reverse-fill-i {
+    80% {
+        stroke-dashoffset: 328%;
+        stroke: #1e88e5;
+    }
+    100% {
+        stroke-dashoffset: 328%;
+        stroke: #43a047;
+    }
+}
+
+@keyframes reverse-fill-m {
+    80% {
+        stroke-dashoffset: 428%;
+        stroke: #1e88e5;
+    }
+    100% {
+        stroke-dashoffset: 428%;
+        stroke: #43a047;
+    }
+}
+
+@keyframes reverse-fill-o {
+    80% {
+        stroke-dashoffset: 530%;
+        stroke: #1e88e5;
+    }
+    100% {
+        stroke-dashoffset: 530%;
+        stroke: #43a047;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+input:nth-of-type(3):checked ~ svg:nth-of-type(3) {
+    display: block;
+}
+
+input:nth-of-type(3):checked ~ svg:nth-of-type(3) .breath {
+    animation: breath 1s ease infinite;
+}
+
+.breath {
+    cx: 50%;
+    cy: 50%;
+    r: calc(50% - 80px);
+    transform-origin: center;
+    transform: rotate(270deg);
+    stroke: #1e88e5;
+    stroke-width: 30px;
+    stroke-linecap: round;
+    stroke-dasharray: 214%;
+    stroke-dashoffset: 0%;
+    fill: none;
+}
+
+@keyframes breath {
+    50% {
+        stroke-dasharray: 265%;
+        r: calc(50% - 40px);
+        stroke: #43a047;
+    }
+    100% {
+        stroke-dasharray: 214%;
+        r: calc(50% - 80px);
+    }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+input:nth-of-type(4):checked ~ svg:nth-of-type(4) {
+    display: block;
+}
+
+input:nth-of-type(4):checked ~ svg:nth-of-type(4) .left {
+    animation: wave 1s linear infinite;
+}
+
+input:nth-of-type(4):checked ~ svg:nth-of-type(4) .center {
+    animation: wave 1s linear 0.3s infinite;
+}
+
+input:nth-of-type(4):checked ~ svg:nth-of-type(4) .right {
+    animation: wave 1s linear 0.6s infinite;
+}
+
+.left, .center, .right {
+    stroke: #1e88e5;
+    stroke-width: 10%;
+    transform-origin: center;
+    transform: rotateX(0deg);
+}
+
+@keyframes wave {
+    50% {
+        transform: rotateX(70deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+input:nth-of-type(5):checked ~ svg:nth-of-type(5) {
+    display: block;
+}
+
+input:nth-of-type(5):checked ~ svg:nth-of-type(5) .spin-circle {
+    animation: spin 2s linear forwards;
+}
+
+.spin-circle {
+    cx: 50%;
+    cy: 50%;
+    r: calc(50% - 40px);
+    transform: rotate(270deg);
+    transform-origin: center;
+    stroke: #1e88e5;
+    stroke-width: 30px;
+    stroke-linecap: round;
+    stroke-dasharray: 265%;
+    stroke-dashoffset: 132%;
+    fill: none;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+input:nth-of-type(6):checked ~ svg:nth-of-type(6) {
+    display: block;
+}
+
+input:nth-of-type(7):checked ~ svg:nth-of-type(7) {
+    display: block;
+}
+
+input:nth-of-type(8):checked ~ svg:nth-of-type(8) {
+    display: block;
+}
+
+input:nth-of-type(6):checked ~ svg:nth-of-type(6) .fade-dot-left {
+    animation: fade 2s ease infinite;
+}
+
+input:nth-of-type(6):checked ~ svg:nth-of-type(6) .fade-dot-center {
+    animation: fade 2s ease infinite;
+    animation-delay: 0.1s;
+} 
+
+input:nth-of-type(6):checked ~ svg:nth-of-type(6) .fade-dot-right {
+    animation: fade 2s ease infinite;
+    animation-delay: 0.2s;
+}
+
+input:nth-of-type(7):checked ~ svg:nth-of-type(7) .fade-dot-left {
+    animation: zoom 1.3s ease infinite;
+}
+
+input:nth-of-type(7):checked ~ svg:nth-of-type(7) .fade-dot-center {
+    animation: zoom 1.3s ease infinite;
+    animation-delay: 0.2s;
+} 
+
+input:nth-of-type(7):checked ~ svg:nth-of-type(7) .fade-dot-right {
+    animation: zoom 1.3s ease infinite;
+    animation-delay: 0.4s;
+}
+
+input:nth-of-type(8):checked ~ svg:nth-of-type(8) .fade-dot-left {
+    animation: cross-left 1s ease infinite;
+}
+
+input:nth-of-type(8):checked ~ svg:nth-of-type(8) .fade-dot-right {
+    animation: cross-right 1s ease infinite;
+}
+
+.fade-dot-left {
+    cx: 30%;
+    cy: 50%;
+    r: 7%;
+    stroke: #1e88e5;
+    fill: #1e88e5;
+}
+
+.fade-dot-center {
+    cx: 50%;
+    cy: 50%;
+    r: 7%;
+    stroke: #1e88e5;
+    fill: #1e88e5;
+}
+
+.fade-dot-right {
+    cx: 70%;
+    cy: 50%;
+    r: 7%;
+    stroke: #1e88e5;
+    fill: #1e88e5;
+}
+
+@keyframes fade {
+    30% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoom {
+    30% {
+        r: 0%;
+    }
+    100% {
+        r: 7%;
+    }
+}
+
+@keyframes cross-left {
+    50% {
+        cx: 50%;
+    }
+    100% {
+        cx: 30%;
+    }
+}
+
+@keyframes cross-right {
+    50% {
+        cx: 50%;
+    }
+    100% {
+        cx: 70%;
+    }
+}
+
