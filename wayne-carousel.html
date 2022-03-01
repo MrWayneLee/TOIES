@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .carousel {
+            position: relative;
+            overflow: hidden;
+            width: 600px;
+            height: 500px;
+        }
+        .carousel-list, .carousel-item {
+            font-size: 0;
+            height: 100%;
+        }
+        .carousel-list {
+            transition: ease 1s;
+        }
+        .carousel-item {
+            font-size: 1rem;
+            display: inline-block;
+        }
+        .bg-lightgoldenrodyellow {
+            background: lightgoldenrodyellow;
+        }
+        .bg-lightpink {
+            background: lightpink;
+        }
+        .bg-lightskyblue {
+            background: lightskyblue;
+        }
+        .controller-prev, .controller-next {
+            position: absolute;
+            background: lightgrey;
+            top: calc(50% - 15px);
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+            user-select: none;
+            text-align: center;
+            line-height: 30px;
+        }
+        .controller-prev {
+            left: 0;
+        }
+        .controller-next {
+            right: 0;
+        }
+    </style>
+    <title>test | Test</title>
+</head>
+<body>
+    <div class="carousel" id="carousel-main">
+        <div class="carousel-list">
+            <div class="carousel-item bg-lightgoldenrodyellow"></div>
+            <div class="carousel-item bg-lightpink"></div>
+            <div class="carousel-item bg-lightskyblue"></div>
+        </div>
+        <div class="controller-prev">&lt;</div>
+        <div class="controller-next">&gt;</div>
+    </div>
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/carousel.wayne.js"></script>
+</body>
+</html>
