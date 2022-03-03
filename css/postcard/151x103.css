@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.template {
+    display: none;
+    user-select: none;
+    background: #fff;
+    position: relative;
+    border: 0.1mm solid #ccc;
+}
+
+.template * {
+    position: absolute;
+}
+
+.size-151-103 {
+    width: 151mm;
+    height: 103mm;
+}
+
+.show {
+    display: block;
+}
+
+/* 模板一 */
+
+.zipcode {
+    top: 1rem;
+    left: 1rem;
+    font-size: 0;
+}
+
+.zipcode .cube {
+    border: 0.7mm solid #333;
+    display: inline-block;
+    position: relative;
+    margin-right: 0.3rem;
+    width: 8.2mm;
+    height: 9.4mm;
+}
+
+.stamp {
+    width: 15%;
+    height: 28%;
+    right: 1rem;
+    top: 1rem;
+    border: 1px dashed #aaa;
+}
+
+.divide-line {
+    background: #aaa;
+    width: 0.1mm;
+    left: 50%;
+    top: 10%;
+    height: 80%;
+}
+
+.note {
+    right: 0;
+    padding: 0 1rem;
+    bottom: 4rem;
+    height: 30%;
+    width: 50%;
+}
+
+.note .note-line {
+    position: relative;
+    height: 33.3333%;
+    width: 100%;
+    border-bottom: 0.1mm solid #aaa;
+}
+
+.zipcode-cn {
+    font-family: 'STZhongsong';
+    font-weight: 600;
+    right: 6rem;
+    bottom: 1rem;
+}
+
+.sticker-1 {
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.sticker-1 p {
+    position: relative;
+    font-family: 'STZhongsong';
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.sticker-1 p:first-of-type {
+    font-size: 1.2rem;
+}
+
+/* 模板二 */
+
+.sticker-2 {
+    left: 1rem;
+    bottom: 1rem;
+    width: 32%;
+}
+
+/* 模板三 */
+
+.bg-1 {
+    background: url('../../img/sky/bg-1.png');
+    background-position-y: 90%;
+    background-position-x: 80%;
+}
+
+/* 模板四 */
+
+.bg-2 {
+    background: url('../../img/sky/bg-1.png');
+}
+
+.sticker-3 {
+    left: 1rem;
+    bottom: 1rem;
+    width: 22%;
+}
+
+/* 模板五 */
+
+.stamp.sticker-4 {
+    width: 18%;
+    height: auto;
+    border: none;
+}
+
+/* 模板六 */
+
+.sticker-5-1 {
+    width: 10%;
+    left: 0.5rem;
+    bottom: 0.5rem;
+}
+
+.sticker-5-2 {
+    left: 4.2rem;
+    bottom: 1rem;
+}
+
+.sticker-5-2 p {
+    position: relative;
+    font-family: '微软雅黑 Light';
+    /* font-family: 'STZhongsong'; */
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.sticker-5-2-1 {
+    font-size: 0.6rem!important;
+}
