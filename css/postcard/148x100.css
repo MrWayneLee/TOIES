@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: #eee;
+    align-items: center;
+    justify-content: center;
+}
+
+.template {
+    display: none;
+    user-select: none;
+    background: #fff;
+    position: relative;
+}
+
+.template * {
+    position: absolute;
+}
+
+.size-148-100 {
+    width: 148mm;
+    height: 100mm;
+}
+
+.show {
+    display: block;
+}
+
+/* 模板一 */
+
+.zipcode {
+    width: 40%;
+    top: 4.26%;
+    left: 2.88%;
+    font-size: 0;
+    height: 9.4%;
+}
+
+.zipcode .cube {
+    border: 0.7mm solid #333;
+    display: inline-block;
+    position: relative;
+    margin-right: 2.15%;
+    width: 14.5%;
+    height: 100%;
+}
+
+.stamp {
+    width: 15%;
+    height: 28%;
+    right: 2.88%;
+    top: 4.26%;
+    border: 0.3mm dashed #aaa;
+}
+
+.divide-line {
+    background: #aaa;
+    width: 0.3mm;
+    left: 50%;
+    top: 10%;
+    height: 80%;
+}
+
+.note {
+    right: 0;
+    padding: 0 2.88%;
+    bottom: 17.04%;
+    height: 30%;
+    width: 50%;
+}
+
+.note .note-line {
+    position: relative;
+    height: 33.3333%;
+    width: 100%;
+    border-bottom: 0.3mm solid #aaa;
+}
+
+.zipcode-cn {
+    font-family: 'STZhongsong';
+    font-weight: 600;
+    font-size: 100%;
+    right: 17.88%;
+    bottom: 4.26%;
+}
+
+.sticker-1-1 {
+    margin: 0;
+    left: 2.88%;
+    font-weight: 700;
+    font-family: '微软雅黑 Light';
+    bottom: 15%;
+    width: 35%;
+    text-align: center;
+}
+
+.sticker-1-2 {
+    opacity: 0.8;
+    width: 35%;
+    left: 2.88%;
+    bottom: 4.26%;
+}
+
+.sticker-2 {
+    opacity: 0.3;
+    width: 30%;
+    bottom: 4.26%;
+    left: 2.88%;
+}
