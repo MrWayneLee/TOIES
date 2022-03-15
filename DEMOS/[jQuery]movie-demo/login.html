@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script>
+            $(function(){
+                $("#close").click(function(){
+                    $(".modelbox").fadeOut(500)
+                    $(".modelcontent").fadeOut(500)
+                })
+                $("#login").click(function(){
+                    us = $("#l-name").val()
+                    pass = $("#l-pass").val()
+                    $.getJSON("js/data-user.json",function(data){
+                        jsonLength = 0
+                        for(var id in data){
+                            jsonLength++
+                        }
+                        for(l = 0; l < jsonLength;l ++){
+                            if(data[l]["username"] == us && data[l]["password"] == pass){
+                                console.log("成功")
+                                $(".modelbox").fadeIn(500)
+                                $(".modelcontent").fadeIn(500)
+                                $(".modelcontent h2").text("用户：" + us)
+                                //成功之后的代码
+                            }else{
+                                console.log("失败")
+                                //失败之后的代码
+                            }
+                        }
+                        // $.each(data,function(i,item){
+                        //     if(item["username"] == $("#name").val() && item["password"] == $("#pass").val()){
+                        //         console.log("成功")
+                        //     }else{
+                        //         console.log("失败")
+                        //     }
+                        // })
+                    })
+                })
+                //无法实现服务端写入本地文件
+                // $("#register").click(function(){
+                //     var newuserdata = {}
+                //     us = $("#r-name").val()
+                //     pass = $("#r-pass").val()
+                //     pass2 = $("#r-passcon").val()
+                //     email = $("#r-email").val()
+                //     //check = $("#r-check").val()
+                //     if(us == "" || pass == "" || pass2 == "" || email == ""){
+                //         console.log("请完成填写")
+                //         return
+                //     }
+                //     if(pass != pass2){
+                //         console.log("密码不一致，请检查重试")
+                //         return
+                //     }
+                //     $.getJSON("js/data-user.json",function(data){
+                //         jsonLength = 0
+                //         for(var id in data){
+                //             jsonLength++
+                //         }
+                //         for(l = 0; l < jsonLength;l ++){
+                //             if(data[l]["username"] == us){
+                //                 console.log("已有相同用户名")
+                //                 return
+                //             }
+                //         }
+                //     })
+                //     newuserdata = {
+                //         "username":us,
+                //         "password":pass,
+                //         "email":email
+                //     }
+                //     console.log(us)
+                //     $.ajax({
+                //         async:false,
+                //         url:'js/data-user.json',
+                //         type:'post',
+                //         data:newuserdata,
+                //         dataType:"JSON",
+                //         success:function(){console.log("注册成功，数据已添加")},
+                //         failure:function(){console.log("失败")}
+                //     })
+                // })
+            })
+        </script>
+    </head>
+    <body>
+        <div class="progressbar">
+            <div class="bar"></div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">主页</a></li>
+                <li>
+                    <a href="movie.html">电影</a>
+                    <ul>
+                        <li><a href="movie.html#1-1">内地电影</a></li>
+                        <li><a href="movie.html#2-1">欧美电影</a></li>
+                        <li><a href="movie.html#3-1">日韩电影</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="tvseries.html">电视剧</a>
+                    <ul>
+                        <li><a href="tvseries.html#1-1">内地电视剧</a></li>
+                        <li><a href="tvseries.html#2-1">欧美电视剧</a></li>
+                        <li><a href="tvseries.html#3-1">日韩电视剧</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="rank.html">排行榜</a>
+                    <ul>
+                        <li><a href="rank.html#1-1">豆瓣 TOP 排行榜</a></li>
+                        <li><a href="rank.html#2-1">IMDb TOP 排行榜</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="login">
+            <!-- <p class="title">登录</p> -->
+            <input id="l-name" type="text" class="text" placeholder="用户名" value="Wayne"/>
+            <input id="l-pass" type="password" class="text" placeholder="密码" value="123"/>
+            <input id="login" type="button" class="button" value="登录"/>
+            <div class="toregist"><a href="#">还没有账号？</a></div>
+        </div>
+        <div class="regist">
+            <input id="r-name" type="text" class="text" placeholder="用户名"/>
+            <input id="r-pass" type="password" class="text" placeholder="密码"/>
+            <input id="r-passcon" type="password" class="text" placeholder="确认密码"/>
+            <input id="r-email" type="email"" class="text" placeholder="邮箱"/>
+            <input id="r-check" type="text" class="text" placeholder="验证码"/>
+            <input id="register" type="button" class="button" value="提交注册"/>
+            <div class="tologin"><a href="#">返回登录</a></div>
+        </div>
+        <div class="modelbox"></div>
+        <div class="modelcontent">
+            <p>欢迎</p>
+            <h2></h2>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-4">
+                    <a href="index.html" class="btn btn-info">回到主页</a>
+                </div>
+                <div class="col-md-2">
+                    <a class="btn btn-primary" id="close">关闭</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row">
+                <div class="col-md-2"><p class="logo">W</p></div>
+                <div class="col-md-6">
+                    <p><b>jQuery课程设计[2020/05/25-2020/06/19]</b></p>
+                    <p>姓名：Wayne</p>
+                    <p>学号：2020/05/25</p>
+                    <p>班级：2020/06/19</p>
+                    <p>LOGO：Wayne</p>
+                </div>
+                <div class="col-md-4">
+                    <p><b>联系我们：</b></p>
+                    <p>E-MAIL：*@qq.com</p>
+                    <p>TEL：130********</p>
+                    <p>ADDRESS： WUHAN HUBEI</p>
+                    <p><a class="btn btn-danger" href="login.html">使用登录</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

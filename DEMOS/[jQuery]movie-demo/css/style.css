@@ -1,0 +1,487 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+    animation-direction: alternate;
+    -webkit-animation: change 10s infinite;
+}
+@keyframes change {
+    0% {background-color: rgba(0, 0, 0, 0.1);}
+    50% {background-color: rgba(0, 0, 0, 0.5);}
+    100% {background-color: rgba(0, 0, 0, 0.1);}
+}
+.nav {
+    margin: 0 auto;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+}
+.nav ul {
+    list-style: none;
+    margin: 0px auto;
+    padding: 0px;
+    width: 70%;
+}
+.nav ul li {
+    float: left;
+    line-height: 80px;
+    width: 25%;
+    text-align: center;
+    font-size: 20px;
+    max-height: 80px;
+}
+.nav ul li.active {
+    border-bottom: 2px rgba(255, 255, 255, 1) solid;
+    font-weight: bold;
+}
+.nav ul li a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.nav ul li a:hover {
+    font-weight: bold;
+}
+.nav ul li ul {
+    display: none;
+    width: 17.5%;
+    position: absolute;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 1);
+    border-top: solid rgba(223, 223, 223,1) 1px;;
+}
+.nav ul li ul li {
+    float: none;
+    width: 100%;
+    line-height: 45px;
+    font-weight: normal;
+    border: solid rgba(223, 223, 223,1) 1px;
+    border-top: none;
+}
+.nav ul li ul li a {
+    display: block;
+    color: rgba(1, 1, 1, 1);
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+.nav ul li ul li a:hover {
+    background-color: rgba(223, 223, 223,1);
+}
+.progressbar {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 5px;
+}
+.bar {
+    width: 0;
+    height: 100%;
+    background-color: rgba(153, 153, 153, 1);
+}
+.gotop {
+    position: fixed;
+    height: 64px;
+    width: 64px;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+}
+.adswitch {
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    left: 10px;
+    bottom: 10px;
+    background-color: rgba(255,255,255,1);
+    border-radius: 10px;
+    z-index: 20;
+    cursor: pointer;
+}
+.adswitch img {
+    width: 100%;
+}
+.ad {
+    position: fixed;
+    width: 300px;
+    height: 500px;
+    background-color: rgba(1,1,1,0.9);
+    bottom: -510px;
+    left: 10px;
+    border-radius: 10px;
+    z-index: 20;
+}
+.adcontent {
+    font-size: 20px;
+    padding: 100px 0;
+    height: 235px;
+    text-align: center;
+    margin: 10px 10px 5px;
+    background-color: rgba(255,255,255,0.9);
+}
+.slider {
+    position: relative;
+    margin: 20px auto;
+    width: 70%;
+    height: 620px;
+    text-align: center;
+}
+.imglist img {
+    max-width: inherit;
+    width: 100%;
+    height: 100%;
+}
+.imglist a {
+    display: none;
+}
+.imglist a.current {
+    display: block;
+}
+.controllist {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    display: none;
+}
+.controllist ul {
+    margin: 0px;
+    padding: 0px;
+}
+.controllist li {
+    list-style: none;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 20px;
+    height: 20px;
+    margin: 0 20px 0 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.controllist li.current {
+    background-color: rgba(255, 255, 255, 1);
+}
+.slide {
+    position: absolute;
+    top: 50%;
+    padding: 246px 0;
+    margin-top: -310px;
+    cursor: pointer;
+}
+.left {
+    background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.4));
+    left: 0;
+}
+.left.hover {
+    background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.6));
+    left: 0;
+}
+.right {
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.4));
+    right: 0;
+}
+.right.hover {
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.6));
+    right: 0;
+}
+.controlpanel {
+    width: 70%;
+    margin: 20px 15%;
+}
+.controlimglist ul {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.controlimglist img {
+    border-radius: 2px;
+    width: 100%;
+}
+.controlimglist li {
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    list-style: none;
+    float: left;
+    height: 100%;
+    cursor: pointer;
+}
+.controlimglist li.current {
+    border: 2px solid rgba(1, 1, 1, 1);
+}
+.hot {
+    margin: 0 auto 20px;
+    width: 70%;
+}
+.hot img {
+    width: 100%;
+}
+.hot .col-md-3 p,.hot .col-md-2 p {
+    margin: 5px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+.hot .col-md-12 p {
+    margin: 5px 0px;
+    font-size: 18px;
+    text-indent: 2em;
+}
+.hot .col-md-12 .col-md-2 p {
+    text-indent: unset;
+}
+.space {
+    height: 20px;
+}
+.img-thumbnail {
+    margin-bottom: 20px;
+}
+.movie,.tvseries {
+    margin: 20px auto;
+    width: 70%;
+}
+.movie img,.tvseries img {
+    width: 100%;
+}
+.movie .col-md-9 p,.tvseries .col-md-9 p {
+    margin: 2px 0;
+    padding: 0px 0;
+}
+.movie .col-md-9 .msg,.tvseries .col-md-9 .msg {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+.movie .col-md-9 .tit,.tvseries .col-md-9 .tit {
+    color: rgba(0, 0, 0, 0.4);
+}
+.movie .col-md-9 .det,.tvseries .col-md-9 .det {
+    text-indent: 2em;
+}
+.rank {
+    margin: 20px auto;
+    width: 70%;
+}
+.rank h4 {
+    text-indent: 2em;
+}
+.rank hr {
+    border: rgba(0, 0, 0, 1) 0.5px solid;
+}
+.rank-head1,.rank-head2 {
+    width: 100%;
+    margin-top: 20px;
+}
+.rank-head1 ul,.rank-head2 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+.rank-head1 ul li,.rank-head2 ul li {
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin: 0;
+}
+.rank-head1 ul li img,.rank-head2 ul li img {
+    width: 100%;
+    border: 2px rgba(0, 0, 0, 0.3) solid;
+    border-radius: 10px;
+}
+.rank-detail1,.rank-detail2 {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.rank-detail1 .col-md-8 p,.rank-detail1 .col-md-4 p,.rank-detail2 .col-md-8 p,.rank-detail2 .col-md-4 p{
+    line-height: 35px;
+    font-size: 35px;
+}
+.rank-detail1 ul,.rank-detail2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.rank-detail1 ul li,.rank-detail2 ul li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    max-height: 60px;
+    cursor: auto;
+}
+.rank-detail1 ul li:hover,.rank-detail2 ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+.rank .more {
+    margin: 20px auto;
+    height: 60px;
+    width: 300px;
+}
+.rank .more a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    line-height: 60px;
+    display: block;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    border: rgba(0, 0, 0, 1) solid 2px;
+}
+.rank .more a:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}
+.login {
+    margin: 180px 15%;
+}
+.login .title {
+    margin: 30px 0px;
+    text-align: center;
+    font-size: 50px;
+}
+.text{
+    outline: 0;
+    width: 40%;
+    font-size: 30px;
+    margin: 20px 30%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: rgba(0, 0, 0, 1) 2px solid;
+    max-height: 46px;
+}
+.text:focus {
+    border-bottom: rgba(0, 0, 0, 1) 4px solid;
+}
+.button {
+    outline: 0;
+    width: 20%;
+    font-size: 30px;
+    margin: 30px 40%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: rgba(0, 0, 0, 1) 2px solid;
+    cursor: pointer;
+    max-height: 66px;
+}
+.button:focus {
+    border: rgba(0, 0, 0, 1) 4px solid;
+}
+.button:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}
+.regist {
+    margin: 140px 15%;
+    display: none;
+}
+.toregist a,.toregist,.tologin a,.tologin {
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+.modelbox {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 80;
+}
+.modelcontent {
+    position: fixed;
+    display: none;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    transform: translate(50%,50%);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    top: 0px;
+    z-index: 81;
+    text-align: center;
+}
+.modelcontent p {
+    margin: 5% auto 6%;
+    font-size: 80px;
+}
+.modelcontent h2 {
+    margin: 6% auto;
+}
+.modelcontent a {
+    width: 100%;
+}
+.subnav {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.subnav h4 {
+    position: relative;
+    margin: 0px;
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+.subnav h4:hover{
+    background-color: rgba(85, 85, 85, 1);
+}
+.subnav h4 span{
+    position: absolute;
+    right: 10px;
+    top:3px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/arrows/arrow_left_white.png") no-repeat;
+}
+.subnav h4.open span{
+    background-image: url("../images/arrows/arrow_left_white.png") no-repeat;
+}
+.subnav ul {
+    display: none;
+}
+.subnav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(255, 255, 522, 0.6);
+}
+.subnav ul li a {
+    display: block;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.subnav ul li a:hover {
+    background-color: rgba(153, 153, 153, 1);
+    color: rgba(255, 255, 255, 1);
+}
+.footer {
+    margin: 0 auto;
+    padding: 40px 0px;
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+}
+.footer .row {
+    margin: 0 auto;
+    width: 70%;
+    color: rgba(255, 255, 255, 1);
+}
+.footer .logo {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    font-family: "impact";
+    font-size: 780%;
+    text-align: center;
+}
