@@ -2,7 +2,6 @@
 
 > 随便编写的小玩意
 
-
 ### DEMOS
 
 > #### movie-demo [jQuery]
@@ -53,4 +52,8 @@
 
 > #### wayne-carousel.html
 
+<<<<<<< HEAD
 	练习组件的打包方法
+=======
+	组件的打包方法
+>>>>>>> f197f9d3bd26519d5e4efd2b7b09dab3e5206d59
