@@ -8,6 +8,10 @@
 
 	使用jQuery的API编写的一个简易电影网站样式
 
+> #### mc-server-demo [jQuery][Node.js]
+
+	使用jQuery的API编写的一个服务器案例，服务端使用了node.js作为练习
+
 ### TOIES
 
 > #### clock-1.html
@@ -52,8 +56,4 @@
 
 > #### wayne-carousel.html
 
-<<<<<<< HEAD
 	练习组件的打包方法
-=======
-	组件的打包方法
->>>>>>> f197f9d3bd26519d5e4efd2b7b09dab3e5206d59
