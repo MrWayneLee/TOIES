@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#731527"
+        android:id="@+id/rl_mainactivity_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/fragmrnt_title"
+            android:textColor="#ffffff"
+            android:text="主         页"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/rl_mainactivity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<android.support.v4.view.ViewPager-->
+            <ImageView
+                android:layout_marginBottom="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/viewpager_1"
+                android:id="@+id/vp_scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"/>
+
+            <!--</android.support.v4.view.ViewPager>-->
+
+            <!--<TextView-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_below="@+id/vp_scroll"-->
+                <!--android:id="@+id/tv_fragmentindex_texttitle"-->
+                <!--android:textSize="30dp"-->
+                <!--android:textColor="#000"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:textAlignment="center"-->
+                <!--android:text="功   能   区"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <TableLayout
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/vp_scroll"
+                android:orientation="horizontal"
+                android:id="@+id/tl_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_schedule"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/icon_schedule"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/iv_fragmentindex_1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp" />
+
+                        <TextView
+                            android:layout_below="@+id/iv_fragmentindex_1"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#000"
+                            android:text="日程安排"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_list"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/icon_list"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/iv_fragmentindex_2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp" />
+
+                        <TextView
+                            android:layout_below="@+id/iv_fragmentindex_2"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#000"
+                            android:text="通知公告"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_log"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        >
+
+                        <ImageView
+                            android:src="@drawable/icon_log"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/iv_fragmentindex_3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp" />
+
+                        <TextView
+                            android:layout_below="@+id/iv_fragmentindex_3"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#000"
+                            android:text="工作日志"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_note"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        >
+
+                        <ImageView
+                            android:src="@drawable/icon_note"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/iv_fragmentindex_4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp" />
+
+                        <TextView
+                            android:layout_below="@+id/iv_fragmentindex_4"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#000"
+                            android:text="便利贴"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/tl_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_mainfragment_1"
+                    android:background="#eeeeee"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:id="@+id/tv_fragmentindex_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="新闻"
+                        android:textColor="#000"
+                        android:textSize="22dp" />
+
+                    <ImageView
+                        android:src="@drawable/icon_goin"
+                        android:layout_margin="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_mainfragment_2"
+                    android:layout_marginTop="1dp"
+                    android:layout_below="@+id/ll_mainfragment_1"
+                    android:background="#eeeeee"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:background="#eeeeee"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:id="@+id/tv_fragmentindex_music"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="音乐"
+                        android:textColor="#000"
+                        android:textSize="22dp" />
+
+                    <ImageView
+                        android:layout_margin="10dp"
+                        android:src="@drawable/icon_goin"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

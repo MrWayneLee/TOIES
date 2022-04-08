@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_index_newsActivity">
+
+    <RelativeLayout
+        android:background="#731527"
+        android:id="@+id/rl_fragmentindexnews_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/fragmentindexnews_title"
+            android:textColor="#ffffff"
+            android:text="最   新   要   问"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:paddingTop="20dp"
+            android:src="@drawable/icon_back"
+            android:id="@+id/btn_fragmentindexnews_back"
+            android:background="@drawable/style_button_back"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_fragmentindexnews_content"
+        android:layout_below="@+id/rl_fragmentindexnews_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

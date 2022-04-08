@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/image_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_about_usActivity">
+
+    <RelativeLayout
+        android:background="#90ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:paddingTop="20dp"
+            android:src="@drawable/icon_back"
+            android:id="@+id/btn_aboutavtivity_back"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <ImageView
+            android:src="@drawable/app_logo"
+            android:id="@+id/tv_fragmentaboutactivity_1"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/tv_fragmentaboutactivity_2"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_fragmentaboutactivity_1"
+            android:text="掌上APP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_fragmentaboutactivity_3"
+            android:textColor="#555555"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_fragmentaboutactivity_2"
+            android:text="Pocket APP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_fragmentaboutactivity_4"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_fragmentaboutactivity_3"
+            android:text="=开发人员="
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_fragmentaboutactivity_5"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_fragmentaboutactivity_4"
+            android:text="=李成玮|雷星豪|周鲲宇="
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_fragmentaboutactivity_6"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_fragmentaboutactivity_5"
+            android:text="=卢珣|易紫君|张婧卓="
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_fragmentaboutactivity_7"
+            android:textColor="#555555"
+            android:textSize="15dp"
+            android:layout_marginTop="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_fragmentaboutactivity_6"
+            android:text="版本号：release v1.0 1080x1920"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_fragmentaboutactivity_8"
+            android:textColor="#555555"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_fragmentaboutactivity_7"
+            android:text="适配 Android 5.0 及以上"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

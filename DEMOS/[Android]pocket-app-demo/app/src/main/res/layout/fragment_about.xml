@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#731527"
+        android:id="@+id/rl_aboutactivity_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/fragmrnt_title"
+            android:textColor="#ffffff"
+            android:text="关         于"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_about_container"
+        android:layout_below="@+id/rl_aboutactivity_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@drawable/fragment_background"
+            android:id="@+id/rl_fragmentabout_background"
+            android:layout_width="wrap_content"
+            android:layout_height="270dp">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/lv_about_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:text="登录名："
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:id="@+id/tv_about_1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@+id/rl_fragmentabout_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_about_user"
+            android:textColor="#555"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/rl_fragmentabout_background"
+            android:layout_toRightOf="@+id/tv_about_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textSize="15dp"
+            android:text="注         销"
+            android:background="@drawable/style_botton"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_aboutavtivity_logout"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:textSize="15dp"
+            android:text="关   于   我   们"
+            android:layout_marginBottom="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/style_botton"
+            android:id="@+id/btn_aboutavtivity_about"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

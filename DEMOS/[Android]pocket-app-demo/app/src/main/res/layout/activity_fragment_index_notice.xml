@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_index_noticeActivity">
+
+    <RelativeLayout
+        android:background="#731527"
+        android:id="@+id/rl_fragmentindexnotice_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/fragmentindexnotice_title"
+            android:textColor="#ffffff"
+            android:text="通   知   公   告"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:paddingTop="20dp"
+            android:src="@drawable/icon_back"
+            android:id="@+id/btn_fragmentindexnotice_back"
+            android:background="@drawable/style_button_back"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:layout_below="@+id/rl_fragmentindexnotice_title"
+        app:tabTextColor="#555"
+        app:tabSelectedTextColor="#731527"
+        app:tabMode="fixed"
+        app:tabIndicatorHeight="5dp"
+        app:tabIndicatorColor="#731527"
+        android:id="@+id/tablayout_notice"
+        android:background="#90ffe5e5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <android.support.design.widget.TabItem
+            android:text="通知"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TabItem
+            android:text="公告"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/tablayout_notice"
+        android:background="#fff"
+        android:id="@+id/tab_viewpager_notice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

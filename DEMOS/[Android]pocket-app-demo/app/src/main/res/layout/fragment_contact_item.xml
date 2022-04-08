@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/iv_fragment_contact_item_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:text="用户名"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/iv_fragment_contact_item_icon"
+        android:id="@+id/tv_fragment_contact_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="QQ号码"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_fragment_contact_item_name"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/iv_fragment_contact_item_icon"
+        android:id="@+id/tv_fragment_contact_item_QQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="手机号码"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_fragment_contact_item_QQ"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/iv_fragment_contact_item_icon"
+        android:id="@+id/tv_fragment_contact_item_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/iv_fragment_contact_item_call"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/icon_call"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+
+</RelativeLayout>

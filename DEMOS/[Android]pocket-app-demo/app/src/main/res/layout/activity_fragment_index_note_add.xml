@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_index_note_addActivity">
+
+    <RelativeLayout
+        android:background="#731527"
+        android:id="@+id/rl_fragmentindexnoteadd_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/fragment_title"
+            android:textColor="#ffffff"
+            android:text="添   加   便   利   贴"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:paddingTop="20dp"
+            android:src="@drawable/icon_back"
+            android:id="@+id/btn_fragmentindexnoteadd_back"
+            android:background="@drawable/style_button_back"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/rl_fragmentindexnoteadd_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:padding="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/style_edittext_addlog"
+            android:hint="添加便利贴内容"
+            android:id="@+id/et_fragmentindexlogadd_logcontent"
+            android:layout_above="@+id/btn_fragmentindexnoteadd_save"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:textSize="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_fragmentindexnoteadd_save"
+            android:text="保   存"
+            android:background="@drawable/style_botton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

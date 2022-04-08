@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+:root {
+	--color-dark: #212121;
+	--color-light: #fbfcfd;
+	--color-gray: #f4f4f4;
+	--color-smoke: #979797;
+	--color-red: #cc0d00;
+	--theme-main: #35495e;
+	--theme-sub: #41b883;
+}
+
+.trans03 {
+	transition: 0.3s ease;
+}
+
+.trans05 {
+	transition: 0.5s ease;
+}
+
+.trans07 {
+	transition: 0.7s ease;
+}
+
+.trans09 {
+	transition: 0.9s ease;
+}
+
+.trans02 {
+	transition: 0.2s ease;
+}
+
+.trans04 {
+	transition: 0.4s ease;
+}
+
+.trans06 {
+	transition: 0.6s ease;
+}
+
+.trans08 {
+	transition: 0.8s ease;
+}
+
+.trans10 {
+	transition: 1s ease;
+}
+
+.bg-color-dark {
+	background: #212121;
+}
+
+.bg-color-light {
+	background: #fbfcfd;
+}
+
+.bg-color-white {
+	background: #fff;
+}
+
+.bg-color-black {
+	background: #000;
+}
+
+.color-dark {
+	color: #212121;
+}
+
+.color-light {
+	color: #fbfcfd;
+}
+
+.color-white {
+	color: #fff;
+}
+
+.color-black {
+	color: #000;
+}

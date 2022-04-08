@@ -1,0 +1,615 @@
+{
+	"ret": true,
+	"data": [{
+		"type": "carouselImg",
+		"res": [
+			"../../../../static/imgs/huaweinova8black.png",
+			"../../../../static/imgs/iphone12white.png",
+			"../../../../static/imgs/iphone12promaxgraphite.png"
+		]
+	}, {
+		"type": "Phone",
+		"res": [{
+			"id": "11001",
+			"category": "Apple",
+			"name": "iPhone 12",
+			"desc": "A14 Processor, 12 megapixels camera.",
+			"price": "6299",
+			"imgURL": "../../../../static/imgs/iphone12white.png",
+			"info": {
+				"screen": "6.1",
+				"processor": "A14",
+				"camera": "12",
+				"RAM": "4"
+			},
+			"selector": {
+				"color": ["white", "black", "blue", "green", "purple", "red"],
+				"carouselImg": [
+					"../../../../static/imgs/iphone12white.png",
+					"../../../../static/imgs/iphone12black.png",
+					"../../../../static/imgs/iphone12blue.png",
+					"../../../../static/imgs/iphone12green.png",
+					"../../../../static/imgs/iphone12purple.png",
+					"../../../../static/imgs/iphone12red.png"
+				],
+				"capacity": ["64", "128", "256"],
+				"price": ["6299", "6799", "7599"]
+			}
+		}, {
+			"id": "11002",
+			"category": "Apple",
+			"name": "iPhone 12 Pro",
+			"desc": "A14 Processor, 12 megapixels camera.",
+			"price": "8499",
+			"imgURL": "../../../../static/imgs/iphone12prographite.png",
+			"info": {
+				"screen": "6.1",
+				"processor": "A14",
+				"camera": "12",
+				"RAM": "6"
+			},
+			"selector": {
+				"color": ["graphite", "silver", "gold", "oceanblue"],
+				"carouselImg": [
+					"../../../../static/imgs/iphone12prographite.png",
+					"../../../../static/imgs/iphone12prosilver.png",
+					"../../../../static/imgs/iphone12progold.png",
+					"../../../../static/imgs/iphone12prooceanblue.png"
+				],
+				"capacity": ["128", "256", "512"],
+				"price": ["8499", "9299", "11099"]
+			}
+		}, {
+			"id": "11003",
+			"category": "Apple",
+			"name": "iPhone 12 Pro Max",
+			"desc": "A14 Processor, 12 megapixels camera. Lidar scanner",
+			"price": "9299",
+			"imgURL": "../../../../static/imgs/iphone12promaxgraphite.png",
+			"info": {
+				"screen": "6.7",
+				"processor": "A14",
+				"camera": "12",
+				"RAM": "6"
+			},
+			"selector": {
+				"color": ["graphite", "silver", "gold", "oceanblue"],
+				"carouselImg": [
+					"../../../../static/imgs/iphone12promaxgraphite.png",
+					"../../../../static/imgs/iphone12promaxsilver.png",
+					"../../../../static/imgs/iphone12promaxgold.png",
+					"../../../../static/imgs/iphone12promaxoceanblue.png"
+				],
+				"capacity": ["128", "256", "512"],
+				"price": ["9299", "10099", "11899"]
+			}
+		}, {
+			"id": "11004",
+			"category": "Apple",
+			"name": "iPhone 12 Mini",
+			"desc": "A14 Processor, 12 megapixels camera.",
+			"price": "5499",
+			"imgURL": "../../../../static/imgs/iphone12miniwhite.png",
+			"info": {
+				"screen": "5.1",
+				"processor": "A14",
+				"camera": "12",
+				"RAM": "4"
+			},
+			"selector": {
+				"color": ["white", "black", "blue", "green", "purple", "red"],
+				"carouselImg": [
+					"../../../../static/imgs/iphone12miniwhite.png",
+					"../../../../static/imgs/iphone12miniblack.png",
+					"../../../../static/imgs/iphone12miniblue.png",
+					"../../../../static/imgs/iphone12minigreen.png",
+					"../../../../static/imgs/iphone12minipurple.png",
+					"../../../../static/imgs/iphone12minired.png"
+				],
+				"capacity": ["64", "128", "256"],
+				"price": ["5499", "5999", "6799"]
+			}
+		}, {
+			"id": "11005",
+			"category": "Apple",
+			"name": "iPhone 11",
+			"desc": "A13 Processor, 12 megapixels camera.",
+			"price": "4799",
+			"imgURL": "../../../../static/imgs/iphone11white.png",
+			"info": {
+				"screen": "6.1",
+				"processor": "A13",
+				"camera": "12",
+				"RAM": "4"
+			},
+			"selector": {
+				"color": ["white", "black", "green", "yellow", "purple", "red"],
+				"carouselImg": [
+					"../../../../static/imgs/iphone11white.png",
+					"../../../../static/imgs/iphone11black.png",
+					"../../../../static/imgs/iphone11green.png",
+					"../../../../static/imgs/iphone11yellow.png",
+					"../../../../static/imgs/iphone11purple.png",
+					"../../../../static/imgs/iphone11red.png"
+				],
+				"capacity": ["64", "128", "256"],
+				"price": ["4799", "5299", "6099"]
+			}
+		}, {
+			"id": "11006",
+			"category": "Apple",
+			"name": "iPhone SE(2 Gen)",
+			"desc": "A13 Processor, 12 megapixels camera.",
+			"price": "3299",
+			"imgURL": "../../../../static/imgs/iphonesewhite.png",
+			"info": {
+				"screen": "4.7",
+				"processor": "A13",
+				"camera": "12",
+				"RAM": "4"
+			},
+			"selector": {
+				"color": ["white", "black", "red"],
+				"carouselImg": [
+					"../../../../static/imgs/iphonesewhite.png",
+					"../../../../static/imgs/iphoneseblack.png",
+					"../../../../static/imgs/iphonesered.png"
+				],
+				"capacity": ["64", "128", "256"],
+				"price": ["3299", "3799", "4599"]
+			}
+		}, {
+			"id": "11007",
+			"category": "Apple",
+			"name": "iPhone XR",
+			"desc": "A12 Processor, 12 megapixels camera.",
+			"price": "3999",
+			"imgURL": "../../../../static/imgs/iphonexrwhite.png",
+			"info": {
+				"screen": "6.1",
+				"processor": "A12",
+				"camera": "12",
+				"RAM": "4"
+			},
+			"selector": {
+				"color": ["white", "black", "blue", "coral", "yellow", "red"],
+				"carouselImg": [
+					"../../../../static/imgs/iphonexrwhite.png",
+					"../../../../static/imgs/iphonexrblack.png",
+					"../../../../static/imgs/iphonexrblue.png",
+					"../../../../static/imgs/iphonexrcoral.png",
+					"../../../../static/imgs/iphonexryellow.png",
+					"../../../../static/imgs/iphonexrred.png"
+				],
+				"capacity": ["64", "128"],
+				"price": ["3999", "4499"]
+			}
+		}, {
+			"id": "12001",
+			"category": "Huawei",
+			"name": "HUAWEI P50 Pro [4G]",
+			"desc": "Kirin 9000 Processor, HarmonyOS 2 system, 50 magapixels camera",
+			"price": "6488",
+			"imgURL": "../../../../static/imgs/huaweip50prowhite.png",
+			"info": {
+				"screen": "6.6",
+				"processor": "Kirin 9000",
+				"camera": "50",
+				"RAM": "8"
+			},
+			"selector": {
+				"color": ["white", "black", "gold", "pink"],
+				"carouselImg": [
+					"../../../../static/imgs/huaweip50prowhite.png",
+					"../../../../static/imgs/huaweip50problack.png",
+					"../../../../static/imgs/huaweip50progold.png",
+					"../../../../static/imgs/huaweip50propink.png"
+				],
+				"capacity": ["256", "512"],
+				"price": ["6488", "7488"]
+			}
+		}, {
+			"id": "12002",
+			"category": "Huawei",
+			"name": "HUAWEI Mate 40 Pro [4G]",
+			"desc": "Kirin 9000 Processor, HarmonyOS 2 system, 50 magapixels camera",
+			"price": "6099",
+			"imgURL": "../../../../static/imgs/huaweimate40problack.png",
+			"info": {
+				"screen": "6.76",
+				"processor": "Kirin 9000",
+				"camera": "50",
+				"RAM": "8"
+			},
+			"selector": {
+				"color": ["black", "white", "silver", "summer", "autumn"],
+				"carouselImg": [
+					"../../../../static/imgs/huaweimate40problack.png",
+					"../../../../static/imgs/huaweimate40prowhite.png",
+					"../../../../static/imgs/huaweimate40prosilver.png",
+					"../../../../static/imgs/huaweimate40prosummer.png",
+					"../../../../static/imgs/huaweimate40proautumn.png"
+				],
+				"capacity": ["128", "256"],
+				"price": ["6099", "6599"]
+			}
+		}, {
+			"id": "12003",
+			"category": "Huawei",
+			"name": "HUAWEI Mate 40 Pro",
+			"desc": "Kirin 9000 Processor, 50 magapixels camera",
+			"price": "6499",
+			"imgURL": "../../../../static/imgs/huaweimate40pro5gblack.png",
+			"info": {
+				"screen": "6.76",
+				"processor": "Kirin 9000",
+				"camera": "50",
+				"RAM": "8"
+			},
+			"selector": {
+				"color": ["black", "white", "silver", "summer", "autumn"],
+				"carouselImg": [
+					"../../../../static/imgs/huaweimate40pro5gblack.png",
+					"../../../../static/imgs/huaweimate40pro5gwhite.png",
+					"../../../../static/imgs/huaweimate40pro5gsilver.png",
+					"../../../../static/imgs/huaweimate40pro5gsummer.png",
+					"../../../../static/imgs/huaweimate40pro5gautumn.png"
+				],
+				"capacity": ["128", "256", "512"],
+				"price": ["6499", "6999", "7999"]
+			}
+		}, {
+			"id": "12004",
+			"category": "Huawei",
+			"name": "HUAWEI Mate 40",
+			"desc": "Kirin 9000E Processor, 50 magapixels camera",
+			"price": "4999",
+			"imgURL": "../../../../static/imgs/huaweimate405gblack.png",
+			"info": {
+				"screen": "6.5",
+				"processor": "Kirin 9000E",
+				"camera": "50",
+				"RAM": "8"
+			},
+			"selector": {
+				"color": ["black", "white", "silver", "summer", "autumn"],
+				"carouselImg": [
+					"../../../../static/imgs/huaweimate405gblack.png",
+					"../../../../static/imgs/huaweimate405gwhite.png",
+					"../../../../static/imgs/huaweimate405gsilver.png",
+					"../../../../static/imgs/huaweimate405gsummer.png",
+					"../../../../static/imgs/huaweimate405gautumn.png"
+				],
+				"capacity": ["128", "256"],
+				"price": ["4999", "5499"]
+			}
+		}, {
+			"id": "12005",
+			"category": "Huawei",
+			"name": "HUAWEI nova 8",
+			"desc": "Kirin 985 Processor, 64 magapixels camera",
+			"price": "3099",
+			"imgURL": "../../../../static/imgs/huaweinova8black.png",
+			"info": {
+				"screen": "6.57",
+				"processor": "Kirin 985",
+				"camera": "64",
+				"RAM": "8"
+			},
+			"selector": {
+				"color": ["black", "provence", "no.8", "forest"],
+				"carouselImg": [
+					"../../../../static/imgs/huaweinova8black.png",
+					"../../../../static/imgs/huaweinova8provence.png",
+					"../../../../static/imgs/huaweinova8no8.png",
+					"../../../../static/imgs/huaweinova8forest.png"
+				],
+				"capacity": ["128", "256"],
+				"price": ["3099", "3499"]
+			}
+		}, {
+			"id": "12006",
+			"category": "Huawei",
+			"name": "HUAWEI Mate Xs",
+			"desc": "Kirin 990 Processor, foldable screen, 40 magapixels camera",
+			"price": "16999",
+			"imgURL": "../../../../static/imgs/huaweimatexsstarblue.png",
+			"info": {
+				"screen": "8",
+				"processor": "Kirin 990",
+				"camera": "64",
+				"RAM": "8"
+			},
+			"selector": {
+				"color": ["starblue"],
+				"carouselImg": [
+					"../../../../static/imgs/huaweimatexsstarblue.png"
+				],
+				"capacity": ["512"],
+				"price": ["16999"]
+			}
+		}, {
+			"id": "13001",
+			"category": "OnePlus",
+			"name": "OnePlus 9R",
+			"desc": "Snapdragon 870 Processor, 120Hz refresh rate, 48 magapixels camera",
+			"price": "2799",
+			"imgURL": "../../../../static/imgs/oneplus9rblue.png",
+			"info": {
+				"screen": "6.55",
+				"processor": "Snapdragon 870",
+				"camera": "48",
+				"RAM": "8,12"
+			},
+			"selector": {
+				"color": ["blue", "black", "green"],
+				"carouselImg": [
+					"../../../../static/imgs/oneplus9rblue.png",
+					"../../../../static/imgs/oneplus9rblack.png",
+					"../../../../static/imgs/oneplus9rgreen.png"
+				],
+				"capacity": ["8GB+128", "8GB+256", "12GB+256"],
+				"price": ["2799", "2999", "3299"]
+			}
+		}, {
+			"id": "13002",
+			"category": "OnePlus",
+			"name": "OnePlus 9",
+			"desc": "Snapdragon 888 Processor, 120Hz refresh rate, 50 magapixels camera",
+			"price": "3399",
+			"imgURL": "../../../../static/imgs/oneplus9blue.png",
+			"info": {
+				"screen": "6.55",
+				"processor": "Snapdragon 888",
+				"camera": "50",
+				"RAM": "8,12"
+			},
+			"selector": {
+				"color": ["purple", "blue", "black"],
+				"carouselImg": [
+					"../../../../static/imgs/oneplus9purple.png",
+					"../../../../static/imgs/oneplus9green.png",
+					"../../../../static/imgs/oneplus9black.png"
+				],
+				"capacity": ["8GB+128", "12GB+256"],
+				"price": ["3399", "3799"]
+			}
+		}, {
+			"id": "13003",
+			"category": "OnePlus",
+			"name": "OnePlus 9 Pro",
+			"desc": "Snapdragon 888 Processor, 120Hz refresh rate, 50 magapixels camera",
+			"price": "4599",
+			"imgURL": "../../../../static/imgs/oneplus9prosilver.png",
+			"info": {
+				"screen": "6.7",
+				"processor": "Snapdragon 888",
+				"camera": "50",
+				"RAM": "8,12"
+			},
+			"selector": {
+				"color": ["silver", "green", "black"],
+				"carouselImg": [
+					"../../../../static/imgs/oneplus9prosilver.png",
+					"../../../../static/imgs/oneplus9progreen.png",
+					"../../../../static/imgs/oneplus9problack.png"
+				],
+				"capacity": ["8GB+128", "8GB+256", "12GB+256"],
+				"price": ["4599", "4799", "5299"]
+			}
+		}, {
+			"id": "14001",
+			"category": "XiaoMi",
+			"name": "XiaoMi MIX FOLD",
+			"desc": "Snapdragon 888 Processor, foldable screen, 100 magapixels camera",
+			"price": "9999",
+			"imgURL": "../../../../static/imgs/xiaomimixfoldblack.png",
+			"info": {
+				"screen": "8.01",
+				"processor": "Snapdragon 888",
+				"camera": "100",
+				"RAM": "12,16"
+			},
+			"selector": {
+				"color": ["black"],
+				"carouselImg": [
+					"../../../../static/imgs/xiaomimixfoldblack.png"
+				],
+				"capacity": ["12GB+128", "12GB+512", "16GB+512"],
+				"price": ["9999", "10999", "12999"]
+			}
+		}, {
+			"id": "14002",
+			"category": "XiaoMi",
+			"name": "XiaoMi 11 Pro",
+			"desc": "Snapdragon 888 Processor, 2K resolution, 50 magapixels camera",
+			"price": "4499",
+			"imgURL": "../../../../static/imgs/xiaomi11problack.png",
+			"info": {
+				"screen": "6.81",
+				"processor": "Snapdragon 888",
+				"camera": "50",
+				"RAM": "8,12"
+			},
+			"selector": {
+				"color": ["black", "purple", "green"],
+				"carouselImg": [
+					"../../../../static/imgs/xiaomi11problack.png",
+					"../../../../static/imgs/xiaomi11propurple.png",
+					"../../../../static/imgs/xiaomi11progreen.png"
+				],
+				"capacity": ["8GB+128", "8GB+256", "12GB+256"],
+				"price": ["4499", "4799", "5199"]
+			}
+		}, {
+			"id": "14003",
+			"category": "XiaoMi",
+			"name": "XiaoMi 11 Ultra",
+			"desc": "Snapdragon 888 Processor, 2K resolution, 50 magapixels camera",
+			"price": "5499",
+			"imgURL": "../../../../static/imgs/xiaomi11ultrablack.png",
+			"info": {
+				"screen": "6.81",
+				"processor": "Snapdragon 888",
+				"camera": "50",
+				"RAM": "8,12"
+			},
+			"selector": {
+				"color": ["black", "white"],
+				"carouselImg": [
+					"../../../../static/imgs/xiaomi11ultrablack.png",
+					"../../../../static/imgs/xiaomi11ultrawhite.png"
+				],
+				"capacity": ["8GB+256", "12GB+256", "12GB+512"],
+				"price": ["5499", "5999", "6599"]
+			}
+		}, {
+			"id": "14004",
+			"category": "XiaoMi",
+			"name": "XiaoMi 11",
+			"desc": "Snapdragon 888 Processor, 2K resolution, 100 magapixels camera",
+			"price": "5499",
+			"imgURL": "../../../../static/imgs/xiaomi11black.png",
+			"info": {
+				"screen": "6.81",
+				"processor": "Snapdragon 888",
+				"camera": "100",
+				"RAM": "8,12"
+			},
+			"selector": {
+				"color": ["black", "blue", "white", "purple"],
+				"carouselImg": [
+					"../../../../static/imgs/xiaomi11black.png",
+					"../../../../static/imgs/xiaomi11blue.png",
+					"../../../../static/imgs/xiaomi11white.png",
+					"../../../../static/imgs/xiaomi11purple.png"
+				],
+				"capacity": ["8GB+128", "8GB+256", "12GB+256"],
+				"price": ["3799", "3999", "4399"]
+			}
+		}, {
+			"id": "14005",
+			"category": "XiaoMi",
+			"name": "XiaoMi Redmi K40 Pro",
+			"desc": "Snapdragon 888 Processor, 2K resolution, 64 magapixels camera",
+			"price": "5499",
+			"imgURL": "../../../../static/imgs/xiaomiredmik40problack.png",
+			"info": {
+				"screen": "6.67",
+				"processor": "Snapdragon 888",
+				"camera": "64",
+				"RAM": "8,12"
+			},
+			"selector": {
+				"color": ["black", "blue", "white"],
+				"carouselImg": [
+					"../../../../static/imgs/xiaomiredmik40problack.png",
+					"../../../../static/imgs/xiaomiredmik40problue.png",
+					"../../../../static/imgs/xiaomiredmik40prowhite.png"
+				],
+				"capacity": ["8GB+128", "8GB+256", "12GB+256"],
+				"price": ["2999", "3299", "3699"]
+			}
+		}]
+	}, {
+		"type": "Laptop",
+		"res": [{
+			"id": "21001",
+			"category": "Apple",
+			"name": "MacBook Air",
+			"desc": "Apple M1 CPU with 8 core, 7 core GPU",
+			"price": "7999",
+			"imgURL": "",
+			"info": {
+				"screen": "13.3",
+				"resolution": "2560 x 1600",
+				"CPU": "Apple M1",
+				"CPUCores": "8",
+				"CPUSpeed": "-",
+				"GPU": "-",
+				"GPUCores": "7",
+				"GPUSpeed": "-",
+				"RAM": "8",
+				"RAMType": "-"
+			},
+			"selector": {
+				"color": ["gray", "gold", "silver"],
+				"carouselImg": [
+					"../../../../static/imgs/macbookairgray.png",
+					"../../../../static/imgs/macbookairgold.png",
+					"../../../../static/imgs/macbookairsilver.png"
+				],
+				"CPU": ["Apple M1"],
+				"GPU": ["7 core GPU"],
+				"RAM": ["8", "16"],
+				"capacity": ["256", "512", "1024", "2048"]
+			}
+		}]
+	}, {
+		"type": "tablet",
+		"res": [{
+			"id": "31001",
+			"category": "Apple",
+			"name": "iPad(8th Gen)",
+			"desc": "A13 Processor, 12 megapixels camera.",
+			"price": "3599",
+			"imgURL": ""
+		}, {
+			"id": "31002",
+			"category": "Apple",
+			"name": "iPad Mini(3rd Gen)",
+			"desc": "A13 Processor, 12 megapixels camera.",
+			"price": "3599",
+			"imgURL": ""
+		}, {
+			"id": "31003",
+			"category": "Apple",
+			"name": "iPad Pro",
+			"desc": "A13 Processor, 12 megapixels camera.",
+			"price": "5799",
+			"imgURL": ""
+		}]
+	}, {
+		"type": "shoppingCart",
+		"res": [{
+			"id": "11001",
+			"color": "green",
+			"price": "4499",
+			"capacity": "128",
+			"amount": "1"
+		}, {
+			"id": "11001",
+			"color": "green",
+			"price": "4499",
+			"capacity": "128",
+			"amount": "10"
+		}]
+	}, {
+		"type": "userInformation",
+		"res": {
+			"profile": {
+				"avator": "../../assets/logo.png",
+				"name": "Wayne Lee",
+				"email": "1165461458@qq.com",
+				"gender": "male",
+				"birth": "1998-01-01",
+				"region": "China",
+				"location": "Wuhan - Hubei",
+				"description": "0"
+			},
+			"addressList": [{
+				"loaction": "Wuhan,Hubei,China",
+				"zipCode": "434000",
+				"address": "Hongshan District, Xiongchu Ave. 634th.",
+				"recevier": "Wayne",
+				"tel": "130****6774"
+			}, {
+				"loaction": "Wuhan,Hubei,China",
+				"zipCode": "434000",
+				"address": "Hongshan District",
+				"recevier": "Wayne",
+				"tel": "130****6774"
+			}]
+		}
+	}]
+}

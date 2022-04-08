@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_index_MusicActivity">
+
+    <RelativeLayout
+        android:background="#731527"
+        android:id="@+id/rl_fragmentindexmusic_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/fragmentindexmusic_title"
+            android:textColor="#ffffff"
+            android:text="音         乐"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:paddingTop="20dp"
+            android:src="@drawable/icon_back"
+            android:id="@+id/btn_fragmentindexmusic_back"
+            android:background="@drawable/style_button_back"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rl_fragmentindexmusic_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/music_photo"
+            android:layout_margin="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/music_name"
+            android:text="—点按'查找歌曲'—"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/music_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/music_name"
+            android:id="@+id/music_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_below="@+id/music_artist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:padding="15dp"
+                android:src="@drawable/icon_play"
+                android:background="@drawable/style_botton"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/music_play"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:padding="15dp"
+                android:src="@drawable/icon_stop"
+                android:background="@drawable/style_botton"
+                android:id="@+id/music_stop"
+                android:layout_marginLeft="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/music_play"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:background="@drawable/icon_search"
+                android:id="@+id/music_search"
+                android:layout_marginRight="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/music_play"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
