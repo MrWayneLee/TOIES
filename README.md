@@ -58,72 +58,71 @@ Vue的TODO List练习，使用了组件间通信
 
 练习组件的打包方法
 	
-	引用CSS：
+引用CSS：
 
-		.carousel {
-            position: relative;
-            overflow: hidden;
-            width: 600px;
-            height: 500px;
-        }
-        .carousel-list, .carousel-item {
-            font-size: 0;
-            height: 100%;
-        }
-        .carousel-list {
-            transition: ease 1s;
-        }
-        .carousel-item {
-            font-size: 1rem;
-            display: inline-block;
-        }
-		.controller-prev, .controller-next {
-            position: absolute;
-            background: lightgrey;
-            top: calc(50% - 15px);
-            height: 30px;
-            width: 30px;
-            cursor: pointer;
-            user-select: none;
-            text-align: center;
-            line-height: 30px;
-        }
-        .controller-prev {
-            left: 0;
-        }
-        .controller-next {
-            right: 0;
-        }
+    .carousel {
+        position: relative;
+        overflow: hidden;
+        width: 600px;
+        height: 500px;
+    }
+    .carousel-list, .carousel-item {
+        font-size: 0;
+        height: 100%;
+    }
+    .carousel-list {
+        transition: ease 1s;
+    }
+    .carousel-item {
+        font-size: 1rem;
+        display: inline-block;
+    }
+    .controller-prev, .controller-next {
+        position: absolute;
+        background: lightgrey;
+        top: calc(50% - 15px);
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        user-select: none;
+        text-align: center;
+        line-height: 30px;
+    }
+    .controller-prev {
+        left: 0;
+    }
+    .controller-next {
+        right: 0;
+    }
 
-	引用JavaScript：
+引用JavaScript：
 		
-		// 需要放在在jQuery之后
-		<script src="./js/jquery-3.4.1.js"></script>
-		<script src="./js/carousel.wayne.js"></script>
-	
+    // 需要放在在jQuery之后
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/carousel.wayne.js"></script>
 
-	设置HTML标签：
+设置HTML标签：
 
-		<div class="carousel" id="newCarousel">
-			<div class="carousel-list">
-	            <div class="carousel-item">
-					<!-- 轮播内容放在此处 -->
-				</div>
-	            <div class="carousel-item">
-					<!-- 轮播内容放在此处 -->
-				</div>
-				<div class="carousel-item">
-					<!-- 轮播内容放在此处 -->
-				</div>
-        	</div>
-			<div class="controller-prev">&lt;</div>
-        	<div class="controller-next">&gt;</div>
-		</div>
+    <div class="carousel" id="newCarousel">
+        <div class="carousel-list">
+            <div class="carousel-item">
+                <!-- 轮播内容放在此处 -->
+            </div>
+            <div class="carousel-item">
+                <!-- 轮播内容放在此处 -->
+            </div>
+            <div class="carousel-item">
+                <!-- 轮播内容放在此处 -->
+            </div>
+        </div>
+        <div class="controller-prev">&lt;</div>
+        <div class="controller-next">&gt;</div>
+    </div>
 
-    调用组件：
+调用组件：
 
-		var carousel = new WayneCarousel();
-		carousel.init("#newCarousel")
+    var carousel = new WayneCarousel();
+    carousel.init("#newCarousel")
 
 > #### slide.wayne.html
 
