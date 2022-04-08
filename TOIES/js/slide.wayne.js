@@ -1,4 +1,4 @@
-function productSlide() {
+function slide() {
     // 指定元素
     this.ele = null
     // 指定子元素
@@ -20,7 +20,7 @@ function productSlide() {
     }
 }
 
-productSlide.prototype = {
+slide.prototype = {
     init: function(config) {
         this.ele = $(config.element) || this.ele
         this.childEle = $(config.element).children(config.childEle) || this.childEle
