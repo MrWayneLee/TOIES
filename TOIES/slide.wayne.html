@@ -11,14 +11,58 @@
         body {
             margin: 0;
         }
-        
+        .slide {
+            position: relative;
+        }
+        .slide-prev {
+            background: #dedede;
+            position: absolute;
+            user-select: none;
+            cursor: pointer;
+            top: calc(50% - 18.5px);
+            left: 0;
+            z-index: 1;
+            padding: 8px 10px;
+        }
+        .slide-next {
+            background: #dedede;
+            position: absolute;
+            user-select: none;
+            cursor: pointer;
+            top: calc(50% - 18.5px);
+            right: 0;
+            z-index: 1;
+            padding: 8px 10px;
+        }
     </style>
     <title>Document</title>
 </head>
 <body>
+    <div class="slide" id="slide1">
+        <div class="slide-item" style="height:100px;background:lightcoral">
+            <!-- 内容放在此处 -->
+        </div>
+        <div class="slide-item" style="height:100px;background:lightgreen">
+            <!-- 内容放在此处 -->
+        </div>
+        <div class="slide-item" style="height:100px;background:lightblue">
+            <!-- 内容放在此处 -->
+        </div>
+        <div class="slide-prev">&lt;</div>
+        <div class="slide-next">&gt;</div>
+    </div>
     
     
     <script src="./js/jquery-3.4.1.js"></script>
     <script src="./js/slide.wayne.js"></script>
+    <script>
+        var slided = new Slide()
+        slided.init({
+            element: "#slide1",
+            childEle: ".slide-item",
+            prevEle: ".slide-prev",
+            nextEle: ".slide-next"
+        })
+    </script>
 </body>
 </html>

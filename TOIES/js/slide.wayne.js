@@ -1,4 +1,4 @@
-function slide() {
+function Slide() {
     // 指定元素
     this.ele = null
     // 指定子元素
@@ -20,7 +20,7 @@ function slide() {
     }
 }
 
-slide.prototype = {
+Slide.prototype = {
     init: function(config) {
         this.ele = $(config.element) || this.ele
         this.childEle = $(config.element).children(config.childEle) || this.childEle
@@ -42,8 +42,8 @@ slide.prototype = {
         return self
     },
     initDOM: function() {
-        if(!this.ele.children(".wayne-slide").length) {
-            this.ele.append("<div class='wayne-slide' style='width:max-content;transition:ease 0.5s'></div>").children(".wayne-slide").append(this.childEle)
+        if(!this.ele.children(".slide-list").length) {
+            this.ele.append("<div class='slide-list' style='width:max-content;transition:ease 0.5s;font-size:0'></div>").children(".slide-list").append(this.childEle)
         }
         this.prevEle.hide()
         this.nextEle.hide()
@@ -51,9 +51,12 @@ slide.prototype = {
             this.prevEle.show()
             this.nextEle.show()
         }
+        this.ele.css("overflow", "hidden")
         this.childEle.css({
-            "width" : (this.ele.width() - ((this.items - 1) * this.space)) / this.items ,
-            "margin-right": this.space
+            "width": (this.ele.width() - ((this.items - 1) * this.space)) / this.items ,
+            "margin-right": this.space,
+            "display": "inline-block",
+            "font-size": "1rem"
         }).removeClass("active").filter(":lt(" + this.items + ")").addClass("active")
     },
     initEvent: function() {
@@ -76,7 +79,7 @@ slide.prototype = {
         })
     },
     slide: function(offset) {
-        this.ele.children(".wayne-slide").css({
+        this.ele.children(".slide-list").css({
             "transform" : "translateX(-" + offset * (this.childEle.outerWidth() + this.space) + "px)"
         })
     },

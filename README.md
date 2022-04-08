@@ -132,23 +132,64 @@ Vue的TODO List练习，使用了组件间通信
 
     引用CSS：
 
-        ?
+        .slide {
+            position: relative;
+        }
+        .slide-prev {
+            background: #dedede;
+            position: absolute;
+            user-select: none;
+            cursor: pointer;
+            top: calc(50% - 18.5px);
+            left: 0;
+            z-index: 1;
+            padding: 8px 10px;
+        }
+        .slide-next {
+            background: #dedede;
+            position: absolute;
+            user-select: none;
+            cursor: pointer;
+            top: calc(50% - 18.5px);
+            right: 0;
+            z-index: 1;
+            padding: 8px 10px;
+        }
 
     引用JavaScript：
 
-        ?
+        <script src="./js/jquery-3.4.1.js"></script>
+        <script src="./js/slide.wayne.js"></script>
 
     设置HTML标签：
 
-        ? 
+        <div class="slide" id="slide1">
+            <div class="slide-item">
+                <!-- 内容放在此处 -->
+            </div>
+            <div class="slide-item">
+                <!-- 内容放在此处 -->
+            </div>
+            <div class="slide-item">
+                <!-- 内容放在此处 -->
+            </div>
+            <div class="slide-prev">&lt;</div>
+            <div class="slide-next">&gt;</div>
+        </div>
 
     调用组件：
 
-        ?
+        var slide = new Slide()
+        slide.init({
+            element: "#slide1",
+            childEle: ".slide-item",
+            prevEle: ".slide-prev",
+            prevEle: ".slide-next"
+        })
     
 - 设置：
 
-    > ele
+    > element
 
     类型：`string`
 
