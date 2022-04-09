@@ -9,6 +9,7 @@
 3. [weather-demo](https://github.com/MrWayneLee/TOIES/tree/main/DEMOS/%5BPython%5Dweather-demo) [Python]
 4. [pocket-app-demo](https://github.com/MrWayneLee/TOIES/tree/main/DEMOS/%5BAndroid%5Dpocket-app-demo) [Android]
 5. [shopping-demo](https://github.com/MrWayneLee/TOIES/tree/main/DEMOS/%5BVue%5Dshopping-demo) [Vue.js]
+6. [spring-demo](https://github.com/MrWayneLee/TOIES/tree/main/DEMOS/%5BJava%5Dspring-demo) [Java]
 
 ### [TOIES](https://github.com/MrWayneLee/TOIES/tree/main/TOIES)
 
